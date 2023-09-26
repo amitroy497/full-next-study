@@ -9,7 +9,13 @@ const AboutLayout: FC<AboutLayoutProps> = ({ children }) => {
 	const pathName = usePathname();
 	return (
 		<>
-			<h1>Common Layout for About Page</h1>
+			{pathName === '/about/aboutCollege' ? (
+				<h1>Common Layout for About College Page</h1>
+			) : pathName === '/about/aboutStudent' ? (
+				<h1>Common Layout for About Student Page</h1>
+			) : (
+				<h1>Common Layout for About Page</h1>
+			)}
 			{children}
 		</>
 	);
