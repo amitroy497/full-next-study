@@ -15,6 +15,12 @@ export default function Home() {
 			<Link href='/about'>Go To About Page</Link>
 			<br />
 			<br />
+			<Link href='/about/aboutStudent'>Go To About Student Page</Link>
+			<br />
+			<br />
+			<Link href='/about/aboutCollege'>Go To About College Page</Link>
+			<br />
+			<br />
 			<br />
 			<button onClick={() => router.push('/login')}>
 				Navigate To Login Page
@@ -22,6 +28,14 @@ export default function Home() {
 			<br />
 			<button onClick={() => router.push('/about')}>
 				Navigate To About Page
+			</button>
+			<br />
+			<button onClick={() => router.push('/about/aboutStudent')}>
+				Navigate To About Student Page
+			</button>
+			<br />
+			<button onClick={() => router.push('/about/aboutCollege')}>
+				Navigate To About College Page
 			</button>
 		</main>
 	);
