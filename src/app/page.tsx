@@ -21,10 +21,13 @@ export default function Home() {
 			<Link href='/about/aboutCollege'>Go To About College Page</Link>
 			<br />
 			<br />
-			<Link href='/studentList'>Go To Student List Pagse</Link>
+			<Link href='/studentList'>Go To Student List Page</Link>
 			<br />
 			<br />
-			<Link href='/teacherList'>Go To Teacher List Pagse</Link>
+			<Link href='/teacherList'>Go To Teacher List Page</Link>
+			<br />
+			<br />
+			<Link href='/study'>Go To Study Page</Link>
 			<br />
 			<br />
 			<br />
