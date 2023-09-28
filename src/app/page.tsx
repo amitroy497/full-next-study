@@ -24,6 +24,9 @@ export default function Home() {
 			<Link href='/studentList'>Go To Student List Pagse</Link>
 			<br />
 			<br />
+			<Link href='/teacherList'>Go To Teacher List Pagse</Link>
+			<br />
+			<br />
 			<br />
 			<button onClick={() => router.push('/login')}>
 				Navigate To Login Page
@@ -43,6 +46,10 @@ export default function Home() {
 			<br />
 			<button onClick={() => router.push('/studentList')}>
 				Navigate To Student List Page
+			</button>
+			<br />
+			<button onClick={() => router.push('/teacherList')}>
+				Navigate To Teacher List Page
 			</button>
 		</main>
 	);
