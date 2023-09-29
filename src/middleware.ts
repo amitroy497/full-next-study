@@ -6,5 +6,5 @@ export const middleware = (request: any) => {
 };
 
 export const config = {
-	matcher: '/about/:path*',
+	matcher: ['/about/:path*', '/studentList/:path*'],
 };
