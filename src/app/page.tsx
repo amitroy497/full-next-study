@@ -35,6 +35,9 @@ export default function Home() {
 			</Link>
 			<br />
 			<br />
+			<Link href='/imageOptimization'>Go To Image Optimization Page</Link>
+			<br />
+			<br />
 			<Link href='/productListServerSide'>
 				Go To Product List Server Side Page
 			</Link>
@@ -71,6 +74,10 @@ export default function Home() {
 			<br />
 			<button onClick={() => router.push('/productListServerSide')}>
 				Navigate To Product List Server Side Page
+			</button>
+			<br />
+			<button onClick={() => router.push('/imageOptimization')}>
+				Navigate To Image Optimization Page
 			</button>
 		</main>
 	);
