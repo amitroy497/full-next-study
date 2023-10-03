@@ -49,6 +49,9 @@ export default function Home() {
 			<Link href='/generateMetaData'>Go To Generate MetaData Page</Link>
 			<br />
 			<br />
+			<Link href='/scriptComponent'>Go To Script Component Page</Link>
+			<br />
+			<br />
 			<br />
 			<button onClick={() => router.push('/login')}>
 				Navigate To Login Page
@@ -92,6 +95,10 @@ export default function Home() {
 			<br />
 			<button onClick={() => router.push('/generateMetaData')}>
 				Navigate To Generate MetaData Page
+			</button>
+			<br />
+			<button onClick={() => router.push('/scriptComponent')}>
+				Navigate To Script Component Page
 			</button>
 		</main>
 	);
