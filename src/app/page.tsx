@@ -35,6 +35,11 @@ export default function Home() {
 			</Link>
 			<br />
 			<br />
+			<Link href='/productListServerSide'>
+				Go To Product List Server Side Page
+			</Link>
+			<br />
+			<br />
 			<br />
 			<button onClick={() => router.push('/login')}>
 				Navigate To Login Page
@@ -62,6 +67,10 @@ export default function Home() {
 			<br />
 			<button onClick={() => router.push('/productListClientSide')}>
 				Navigate To Product List Client Side Page
+			</button>
+			<br />
+			<button onClick={() => router.push('/productListServerSide')}>
+				Navigate To Product List Server Side Page
 			</button>
 		</main>
 	);
