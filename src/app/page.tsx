@@ -52,6 +52,9 @@ export default function Home() {
 			<Link href='/scriptComponent'>Go To Script Component Page</Link>
 			<br />
 			<br />
+			<Link href='/loadingFeature'>Go To Loading Feature Page</Link>
+			<br />
+			<br />
 			<br />
 			<button onClick={() => router.push('/login')}>
 				Navigate To Login Page
@@ -99,6 +102,10 @@ export default function Home() {
 			<br />
 			<button onClick={() => router.push('/scriptComponent')}>
 				Navigate To Script Component Page
+			</button>
+			<br />
+			<button onClick={() => router.push('/loadingFeature')}>
+				Navigate To Loading Feature Page
 			</button>
 		</main>
 	);
