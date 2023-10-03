@@ -46,6 +46,9 @@ export default function Home() {
 			<Link href='/fontOptimization'>Go To Font Optimization Page</Link>
 			<br />
 			<br />
+			<Link href='/generateMetaData'>Go To Generate MetaData Page</Link>
+			<br />
+			<br />
 			<br />
 			<button onClick={() => router.push('/login')}>
 				Navigate To Login Page
@@ -85,6 +88,10 @@ export default function Home() {
 			<br />
 			<button onClick={() => router.push('/fontOptimization')}>
 				Navigate To Font Optimization Page
+			</button>
+			<br />
+			<button onClick={() => router.push('/generateMetaData')}>
+				Navigate To Generate MetaData Page
 			</button>
 		</main>
 	);
