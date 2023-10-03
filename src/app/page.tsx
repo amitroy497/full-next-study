@@ -30,7 +30,9 @@ export default function Home() {
 			<Link href='/study'>Go To Study Page</Link>
 			<br />
 			<br />
-			<Link href='/productList'>Go To Product List Page</Link>
+			<Link href='/productListClientSide'>
+				Go To Product List Client Side Page
+			</Link>
 			<br />
 			<br />
 			<br />
@@ -58,8 +60,8 @@ export default function Home() {
 				Navigate To Teacher List Page
 			</button>
 			<br />
-			<button onClick={() => router.push('/productList')}>
-				Navigate To Product List Page
+			<button onClick={() => router.push('/productListClientSide')}>
+				Navigate To Product List Client Side Page
 			</button>
 		</main>
 	);
