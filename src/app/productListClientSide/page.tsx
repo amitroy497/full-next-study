@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
-const ProductListPage = () => {
+const ProductListClientSidePage = () => {
 	const [products, setProducts] = useState([]);
 	const fetchData = async () => {
 		const data = await fetch('https://dummyjson.com/products');
@@ -16,6 +16,7 @@ const ProductListPage = () => {
 	return (
 		<>
 			<h1>Product List Page</h1>
+			<h2>Fetch Api Data In Client Side</h2>
 			<Link href='/'>Back To Home Page</Link>
 			{products.map((product: any) => (
 				<h3 key={product?.id}>
@@ -26,4 +27,4 @@ const ProductListPage = () => {
 	);
 };
 
-export default ProductListPage;
+export default ProductListClientSidePage;
