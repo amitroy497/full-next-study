@@ -35,12 +35,15 @@ export default function Home() {
 			</Link>
 			<br />
 			<br />
-			<Link href='/imageOptimization'>Go To Image Optimization Page</Link>
-			<br />
-			<br />
 			<Link href='/productListServerSide'>
 				Go To Product List Server Side Page
 			</Link>
+			<br />
+			<br />
+			<Link href='/imageOptimization'>Go To Image Optimization Page</Link>
+			<br />
+			<br />
+			<Link href='/fontOptimization'>Go To Font Optimization Page</Link>
 			<br />
 			<br />
 			<br />
@@ -78,6 +81,10 @@ export default function Home() {
 			<br />
 			<button onClick={() => router.push('/imageOptimization')}>
 				Navigate To Image Optimization Page
+			</button>
+			<br />
+			<button onClick={() => router.push('/fontOptimization')}>
+				Navigate To Font Optimization Page
 			</button>
 		</main>
 	);
