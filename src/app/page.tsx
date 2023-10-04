@@ -66,6 +66,11 @@ export default function Home() {
 			<Link href='/api/apiRoutes'>Check Api Routes</Link>
 			<br />
 			<br />
+			<Link href='/api/apiRoutesWithStaticData'>
+				Check Api Routes With Static Data
+			</Link>
+			<br />
+			<br />
 			<br />
 			<button onClick={() => router.push('/login')}>
 				Navigate To Login Page
@@ -133,6 +138,10 @@ export default function Home() {
 			<br />
 			<button onClick={() => router.push('/api/apiRoutes')}>
 				Navigate To Check Api Routes
+			</button>
+			<br />
+			<button onClick={() => router.push('/api/apiRoutesWithStaticData')}>
+				Navigate To Check Api Routes With Static Data
 			</button>
 		</main>
 	);
