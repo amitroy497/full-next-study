@@ -63,6 +63,9 @@ export default function Home() {
 			</Link>
 			<br />
 			<br />
+			<Link href='/api/apiRoutes'>Check Api Routes</Link>
+			<br />
+			<br />
 			<br />
 			<button onClick={() => router.push('/login')}>
 				Navigate To Login Page
@@ -126,6 +129,10 @@ export default function Home() {
 				}
 			>
 				Navigate To Redirect Feature Using Config Page
+			</button>
+			<br />
+			<button onClick={() => router.push('/api/apiRoutes')}>
+				Navigate To Check Api Routes
 			</button>
 		</main>
 	);
