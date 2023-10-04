@@ -55,6 +55,9 @@ export default function Home() {
 			<Link href='/loadingFeature'>Go To Loading Feature Page</Link>
 			<br />
 			<br />
+			<Link href='/redirectFeature'>Go To Redirect Feature Page</Link>
+			<br />
+			<br />
 			<br />
 			<button onClick={() => router.push('/login')}>
 				Navigate To Login Page
@@ -106,6 +109,10 @@ export default function Home() {
 			<br />
 			<button onClick={() => router.push('/loadingFeature')}>
 				Navigate To Loading Feature Page
+			</button>
+			<br />
+			<button onClick={() => router.push('/redirectFeature')}>
+				Navigate To Redirect Feature Page
 			</button>
 		</main>
 	);
