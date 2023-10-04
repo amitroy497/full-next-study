@@ -58,6 +58,11 @@ export default function Home() {
 			<Link href='/redirectFeature'>Go To Redirect Feature Page</Link>
 			<br />
 			<br />
+			<Link href='/redirectFeatureUsingConfig'>
+				Go To Redirect Feature Using Config Page
+			</Link>
+			<br />
+			<br />
 			<br />
 			<button onClick={() => router.push('/login')}>
 				Navigate To Login Page
@@ -113,6 +118,14 @@ export default function Home() {
 			<br />
 			<button onClick={() => router.push('/redirectFeature')}>
 				Navigate To Redirect Feature Page
+			</button>
+			<br />
+			<button
+				onClick={() =>
+					router.push('/redirredirectFeatureUsingConfigectFeature')
+				}
+			>
+				Navigate To Redirect Feature Using Config Page
 			</button>
 		</main>
 	);
