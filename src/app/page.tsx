@@ -71,6 +71,9 @@ export default function Home() {
 			</Link>
 			<br />
 			<br />
+			<Link href='/callNextApi'>Go To Call Next Api Page Page</Link>
+			<br />
+			<br />
 			<br />
 			<button onClick={() => router.push('/login')}>
 				Navigate To Login Page
@@ -142,6 +145,10 @@ export default function Home() {
 			<br />
 			<button onClick={() => router.push('/api/apiRoutesWithStaticData')}>
 				Navigate To Check Api Routes With Static Data
+			</button>
+			<br />
+			<button onClick={() => router.push('/callNextApi')}>
+				Navigate To Call Next Api Page
 			</button>
 		</main>
 	);
