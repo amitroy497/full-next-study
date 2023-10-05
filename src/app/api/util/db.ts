@@ -13,9 +13,9 @@ export const dataList = [
 	},
 	{
 		id: 3,
-		name: 'xyz',
+		name: 'ghi',
 		age: 23,
-		email: 'xyz@example.com',
+		email: 'ghi@example.com',
 	},
 	{
 		id: 4,
