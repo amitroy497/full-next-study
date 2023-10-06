@@ -71,7 +71,12 @@ export default function Home() {
 			</Link>
 			<br />
 			<br />
-			<Link href='/callNextApi'>Go To Call Next Api Page Page</Link>
+			<Link href='/callNextApi'>Go To Call Next Api Page</Link>
+			<br />
+			<br />
+			<Link href='/integratePostApiWithUI'>
+				Go To Integrate Post Api With UI Page
+			</Link>
 			<br />
 			<br />
 			<br />
@@ -149,6 +154,10 @@ export default function Home() {
 			<br />
 			<button onClick={() => router.push('/callNextApi')}>
 				Navigate To Call Next Api Page
+			</button>
+			<br />
+			<button onClick={() => router.push('/integratePostApiWithUI')}>
+				Navigate To Integrate Post Api With UI Page
 			</button>
 		</main>
 	);

@@ -1,0 +1,26 @@
+.inputField {
+	display: block;
+	margin: 10px;
+	height: 30px;
+	width: 300px;
+	padding: 8px;
+	color: grey;
+}
+.btn {
+	background-color: skyblue;
+	color: #fff;
+	border: 0;
+	width: 300;
+	margin: 10px;
+	padding: 10px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.addDiv {
+	margin: 100px auto 0 auto;
+	text-align: center;
+	width: 300px;
+}
+.h1Class {
+	font-weight: bold;
+}
