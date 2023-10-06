@@ -79,6 +79,9 @@ export default function Home() {
 			</Link>
 			<br />
 			<br />
+			<Link href='/api/callAllApiRoutes'>Call All Api Routes</Link>
+			<br />
+			<br />
 			<br />
 			<button onClick={() => router.push('/login')}>
 				Navigate To Login Page
@@ -158,6 +161,10 @@ export default function Home() {
 			<br />
 			<button onClick={() => router.push('/integratePostApiWithUI')}>
 				Navigate To Integrate Post Api With UI Page
+			</button>
+			<br />
+			<button onClick={() => router.push('/api/callAllApiRoutes')}>
+				Navigate To Call All Api Routes
 			</button>
 		</main>
 	);
