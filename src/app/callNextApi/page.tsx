@@ -10,6 +10,9 @@ const CallNextApiPage = async () => {
 				{data.map((item: any) => (
 					<li key={item.id}>
 						<Link href={`callNextApi/${item.id}`}>{item.name}</Link>
+						<Link href={`callNextApi/${item.id}/integratePutApiWithUI`}>
+							Edit
+						</Link>
 					</li>
 				))}
 			</ul>
