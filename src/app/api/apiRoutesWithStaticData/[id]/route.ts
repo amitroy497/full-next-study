@@ -22,3 +22,18 @@ export const PUT = async (request: any, content: any) => {
 	}
 	return NextResponse.json({ result: payload, success: true }, { status: 200 });
 };
+
+export const DELETE = (req: any, content: any) => {
+	const id = content.params.id;
+	const arr = ['1', '2', '3', '4'];
+	if (arr.includes(id)) {
+		return NextResponse.json(
+			{ result: 'Data Deleted', success: true },
+			{ status: 200 }
+		);
+	}
+	return NextResponse.json(
+		{ result: 'Invalid Id', success: false },
+		{ status: 400 }
+	);
+};
