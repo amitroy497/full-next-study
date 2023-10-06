@@ -1,5 +1,6 @@
-import { fetchUserList } from './fetchUserList';
 import Link from 'next/link';
+import IntegrateDeleteApiWithUI from './IntegrateDeleteApiWithUI';
+import { fetchUserList } from './fetchUserList';
 
 const CallNextApiPage = async () => {
 	const data = await fetchUserList();
@@ -10,9 +11,12 @@ const CallNextApiPage = async () => {
 				{data.map((item: any) => (
 					<li key={item.id}>
 						<Link href={`callNextApi/${item.id}`}>{item.name}</Link>
+						<span> </span>
 						<Link href={`callNextApi/${item.id}/integratePutApiWithUI`}>
 							Edit
 						</Link>
+						<span> </span>
+						<IntegrateDeleteApiWithUI id={item.id} />
 					</li>
 				))}
 			</ul>
