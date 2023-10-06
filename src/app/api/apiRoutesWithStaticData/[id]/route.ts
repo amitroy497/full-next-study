@@ -10,3 +10,15 @@ export function GET(request: any, content: any) {
 		{ status: 200 }
 	);
 }
+
+export const PUT = async (request: any, content: any) => {
+	const payload = await request.json();
+	payload.id = content.params.id;
+	if (!payload.id || !payload.name || !payload.age || !payload.email) {
+		return NextResponse.json(
+			{ result: 'Invalid Data', success: false },
+			{ status: 400 }
+		);
+	}
+	return NextResponse.json({ result: payload, success: true }, { status: 200 });
+};
