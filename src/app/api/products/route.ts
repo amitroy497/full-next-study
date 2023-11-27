@@ -14,15 +14,10 @@ export async function GET() {
 	}
 }
 
-export async function POST() {
+export async function POST(request: any) {
+	const payload = await request.json();
 	await mongoose.connect(connectionSrt);
-	let product = new Product({
-		name: 'Samsung Note 10',
-		price: '30000',
-		color: 'red',
-		company: 'Samsung',
-		category: 'Mobile',
-	});
+	let product = new Product(payload);
 	const result = await product.save();
 	return NextResponse.json({ result, success: true });
 }
