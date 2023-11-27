@@ -13,3 +13,16 @@ export async function GET() {
 		data = [{ result: 'Something went wrong!', success: false }];
 	}
 }
+
+export async function POST() {
+	await mongoose.connect(connectionSrt);
+	let product = new Product({
+		name: 'Samsung Note 10',
+		price: '30000',
+		color: 'red',
+		company: 'Samsung',
+		category: 'Mobile',
+	});
+	const result = await product.save();
+	return NextResponse.json({ result, success: true });
+}
