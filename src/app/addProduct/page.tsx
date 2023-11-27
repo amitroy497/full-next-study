@@ -25,7 +25,8 @@ const AddProduct = () => {
 		});
 		const response = await data.json();
 		if (response.success) {
-			return alert('New Product Added Successfully');
+			alert('New Product Added Successfully');
+			router.push('/showProducts');
 		}
 		return alert('Error, please try again');
 	};

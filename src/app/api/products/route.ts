@@ -4,13 +4,15 @@ import mongoose from 'mongoose';
 import { NextResponse } from 'next/server';
 
 export async function GET() {
-	let data = [];
 	try {
 		await mongoose.connect(connectionSrt);
-		data = await Product.find();
+		const data = await Product.find();
 		return NextResponse.json({ result: data, success: true });
 	} catch (err) {
-		data = [{ result: 'Something went wrong!', success: false }];
+		return NextResponse.json({
+			result: 'Something went wrong!',
+			success: false,
+		});
 	}
 }
 

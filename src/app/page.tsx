@@ -85,6 +85,9 @@ export default function Home() {
 			<Link href='/addProduct'>Go To Add Product Page</Link>
 			<br />
 			<br />
+			<Link href='/showProducts'>Go To Show Products Page</Link>
+			<br />
+			<br />
 			<br />
 			<button onClick={() => router.push('/login')}>
 				Navigate To Login Page
@@ -172,6 +175,10 @@ export default function Home() {
 			<br />
 			<button onClick={() => router.push('/addProduct')}>
 				Navigate To Add Product Page
+			</button>
+			<br />
+			<button onClick={() => router.push('/showProducts')}>
+				Navigate To Show Products Page
 			</button>
 		</main>
 	);
