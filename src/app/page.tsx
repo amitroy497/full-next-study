@@ -82,6 +82,9 @@ export default function Home() {
 			<Link href='/api/callAllApiRoutes'>Call All Api Routes</Link>
 			<br />
 			<br />
+			<Link href='/addProduct'>Go To Add Product Page</Link>
+			<br />
+			<br />
 			<br />
 			<button onClick={() => router.push('/login')}>
 				Navigate To Login Page
@@ -165,6 +168,10 @@ export default function Home() {
 			<br />
 			<button onClick={() => router.push('/api/callAllApiRoutes')}>
 				Navigate To Call All Api Routes
+			</button>
+			<br />
+			<button onClick={() => router.push('/addProduct')}>
+				Navigate To Add Product Page
 			</button>
 		</main>
 	);
