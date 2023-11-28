@@ -43,6 +43,9 @@ const ShowProducts = () => {
 								<td style={{ borderWidth: 1, padding: 5 }}>
 									{product?.category}
 								</td>
+								<td style={{ borderWidth: 1, padding: 5 }}>
+									<Link href={`/showProducts/${product?._id}`}>Edit</Link>
+								</td>
 							</tr>
 						))}
 					</tbody>
