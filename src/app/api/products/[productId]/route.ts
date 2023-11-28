@@ -28,3 +28,11 @@ export const GET = async (request: Request, content: any) => {
 	const result = await Product.findById(record);
 	return NextResponse.json({ result, success: true });
 };
+
+export const DELETE = async (request: Request, content: any) => {
+	const productId = content?.params?.productId;
+	const record = { _id: productId };
+	await mongoose.connect(connectionSrt);
+	const result = await Product.deleteOne(record);
+	return NextResponse.json({ result, success: true });
+};
